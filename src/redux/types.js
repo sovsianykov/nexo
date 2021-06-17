@@ -1,0 +1,4 @@
+export const GET_SMALL_LIST ='GET_SMALL_LIST';
+export const GET_FULL_LIST ='GET_FULL_LIST';
+export const GET_BIG_IMAGE ='GET_BIG_IMAGE';
+export const POST_COMMENT ='POST_COMMENT';
