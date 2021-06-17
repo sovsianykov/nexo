@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from "react";
+import React, { useCallback } from "react";
 import './modal.scss';
 
 
@@ -11,9 +11,7 @@ import './modal.scss';
 
 
 const Modal = ({active, setActive, children}) => {
-    // useEffect(() =>{
-    //     console.log('render')
-    // })
+
     const handleClick = useCallback(()=>{setActive(false)},[setActive])
 
 

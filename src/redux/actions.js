@@ -14,7 +14,7 @@ export function fetchSmall( ) {
 export function fetchFull() {
     return  async dispatch =>
     {
-        const response = await axios.get('https://boiling-refuge-66454.herokuapp.com/images/:imageId')
+        const response = await axios.get('https://boiling-refuge-66454.herokuapp.com/images/1')
             .then(response => response.data)
             .catch(er =>console.log(er))
         dispatch({type: GET_FULL_LIST, payload : response})
