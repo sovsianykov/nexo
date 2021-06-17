@@ -13,7 +13,10 @@ const rootReducer = combineReducers({
 })
 
 
-export const store = createStore(rootReducer, compose( applyMiddleware(thunk),
+export const store = createStore(
+    rootReducer,
+    persistedState,
+    compose( applyMiddleware(thunk),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
 
 store.subscribe(() => {

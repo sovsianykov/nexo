@@ -1,0 +1,14 @@
+.main_grid {
+  max-width: 1100px;
+  margin: 100px auto;
+  .imgHolder {
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 7px ;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

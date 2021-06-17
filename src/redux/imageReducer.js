@@ -3,17 +3,19 @@ import {GET_BIG_IMAGE, GET_FULL_LIST, GET_SMALL_LIST, POST_COMMENT} from "./type
 
 const initialState = {
     smallSize : [],
+    isLoading : false,
     fullSize : [],
     comments : [],
     currentBigImage : []
 }
 
-function imageReducer(state = initialState, action ) {
+const  imageReducer = (state = initialState, action ) => {
     switch (action.type) {
         case GET_SMALL_LIST :
             return {
                 ...state,
-                smallSize: action.payload
+                smallSize: action.payload,
+                isLoading: true
             }
         case GET_FULL_LIST :
             return {
@@ -32,8 +34,8 @@ function imageReducer(state = initialState, action ) {
 
             }
         default :
-            return state
+            return state;
 
     }
 }
-export default imageReducer()
+export default imageReducer;
