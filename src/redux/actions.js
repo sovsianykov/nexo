@@ -14,14 +14,14 @@ export function fetchSmall( ) {
 export function fetchFull() {
     return  async dispatch =>
     {
-        const response = await axios.get('https://boiling-refuge-66454.herokuapp.com/images/1')
+        const response = await axios.get('https://boiling-refuge-66454.herokuapp.com/images/')
             .then(response => response.data)
             .catch(er =>console.log(er))
         dispatch({type: GET_FULL_LIST, payload : response})
     }
 }
 export function getBigImage(id) {
-    return  async dispatch =>
+    return   dispatch =>
     {
         dispatch({type: GET_BIG_IMAGE, payload : id})
     }

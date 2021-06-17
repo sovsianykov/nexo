@@ -12,7 +12,6 @@ const MainGrid = () => {
         dispatch(fetchFull())
     },[dispatch])
     const list = useSelector(state => state.imageReducer.smallSize)
-    console.log(list)
     return (
 
             <div className="main_grid">
