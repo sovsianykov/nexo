@@ -3,8 +3,8 @@ import { GET_FULL_LIST, GET_SMALL_LIST, POST_COMMENT } from "./types";
 const initialState = {
   smallSize: [],
   isLoading: false,
-  fullSize: [],
-  comments: [{ id: 0, body: "" }],
+  fullSize: [{ id: 111 , url: "" }],
+  comments: [{ id: 0, body: "add comment" }],
 };
 
 const imageReducer = (state = initialState, action) => {
