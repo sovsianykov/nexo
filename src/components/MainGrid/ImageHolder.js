@@ -11,7 +11,7 @@ const ImageHolder = ({url,id}) => {
         setModalActive(true)
     },[])
     const fullSizeStore = useSelector(state => state.imageReducer.fullSize)
-    const srcFull = fullSizeStore.filter(item => item.id === id )[0].url
+    const srcFull = fullSizeStore ? fullSizeStore.filter(item => item.id === id )[0].url : ""
 
     return (
         <>
